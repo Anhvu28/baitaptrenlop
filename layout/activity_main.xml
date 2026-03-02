@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Profile Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="#F8F9FA">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:contentDescription="Profile Avatar" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Văn A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnInfo"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thông tin" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lịch sử" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cài đặt" />
+    </LinearLayout>
+
+    <!-- Fragment Container -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" />
+
+</LinearLayout>

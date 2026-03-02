@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUẢN LÝ LỚP HỌC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="48dp"
+        android:textColor="#1976D2" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <!-- Sinh viên -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_myplaces" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sinh viên"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Giảng viên -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_camera" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giảng viên"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Môn học -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_agenda" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Môn học"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Thống kê -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_sort_by_size" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thống kê"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </GridLayout>
+</LinearLayout>
